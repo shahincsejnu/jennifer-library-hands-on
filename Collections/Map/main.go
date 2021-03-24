@@ -9,7 +9,8 @@ import (
 )
 
 func main() {
-	c := Id("a").Op(":=").Map(Id("string")).Id("string").Values()
+	//c := Id("a").Op(":=").Map(Id("string")).Id("string").Values()
+	c := Id("a").Op(":=").Map(String()).String().Values()
 
 	fmt.Printf("%#v\n", c)
 }
