@@ -10,6 +10,7 @@ import (
 func main() {
 	f := NewFilePathName("a.b/c", "main")
 	f.Func().Id("main").Params().Block(
+		//Qual("a.b/d", "Foo").Call(),
 		Qual("a.b/c", "Foo").Call(),
 	)
 
